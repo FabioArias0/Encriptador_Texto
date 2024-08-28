@@ -1,47 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.CSS">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="app.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.CSS" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Encritador de Texto</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <nav class="header__menu">
-            <a class="header__menu__link" href="index.html"><img class="presentacion__imagen" src="assets/logo.png" alt="Logo de Encryptor"></a>
-        </nav>
+      <nav class="header__menu">
+        <a class="header__menu__link" href="index.html"
+          ><img
+            class="presentacion__imagen"
+            src="assets/logo.png"
+            alt="Logo de Encryptor"
+        /></a>
+      </nav>
     </header>
     <main class="presentacion">
-        <section class="presentacion__contenido">
-            <input id="input" type="text" placeholder="Ingrese texto aqui" class="presentacion__contenido__input">
-                <div class="presentacion__contenido__p">
-                    <i class="fa fa-bars"><p class="presentacion__botones__subtitulo"> Solo se permiten letras minúsculas y sin acento</p></i>
-                </div>
-                <div class="master__botones">
-                    <button onclick="Encriptar()" class="presentacion__botones__accion1">Encriptar</button>
-                    <button onclick="Desencriptar()" class="presentacion__botones__accion2">Desencriptar</button>
-                </div>
-        </section>
+      <section class="presentacion__contenido">
+        <textarea
+          id="input"
+          type="text"
+          placeholder="Ingrese texto aqui"
+          class="presentacion__contenido__input"
+        ></textarea>
+        <div class="presentacion__contenido__p">
+          <i class="fa fa-bars"></i>
+          <p class="presentacion__botones__subtitulo">
+            Solo se permiten letras minúsculas y sin acento
+          </p>
+        </div>
+        <div class="master__botones">
+          <button onclick="Encriptar()" class="presentacion__botones__accion1">
+            Encriptar
+          </button>
+          <button
+            onclick="Desencriptar()"
+            class="presentacion__botones__accion2"
+          >
+            Desencriptar
+          </button>
+        </div>
+      </section>
 
-            <div id="cuadroLateral" class="presentacion__lateral">
-                <div class="master__lateral">
-                    <img id="imagenLateral" class="presentacion__lateral__imagen" src="assets/pic.png" alt="Buscando la informacion">
-                    <h2 id="tituloLateral" class="presentacion__lateral__titulo">Ningún mensaje fue encontrado</h2>
-                    <p id="textoEncriptado" class="presentacion__lateral__parrafo"> Ingrese el texto que desees excriptar o desencriptar</p>
-                    <div class="master__botones__lateral">
-                        <button id="copiar" onclick="Copiar()" class="boton__lateral">Copiar</button>
-                    </div>
-                </div>
-            </div>
-        
+      <div id="cuadroLateral" class="presentacion__lateral">
+        <div class="master__lateral">
+          <img
+            id="imagenLateral"
+            class="presentacion__lateral__imagen"
+            src="assets/pic.png"
+            alt="Buscando la informacion"
+          />
+          <h2 id="tituloLateral" class="presentacion__lateral__titulo">
+            Ningún mensaje fue encontrado
+          </h2>
+          <p id="textoEncriptado" class="presentacion__lateral__parrafo">
+            Ingrese el texto que desees excriptar o desencriptar
+          </p>
+          <div class="master__botones__lateral">
+            <button id="copiar" onclick="Copiar()" class="boton__lateral">
+              Copiar
+            </button>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer class="footer">
-        <p class="footer__parrafo">Desarrollado por Carlos Arias</p>
+      <p class="footer__parrafo">Desarrollado por Carlos Arias</p>
     </footer>
-    
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>

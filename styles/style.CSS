@@ -8,22 +8,28 @@
 
 body{
     background-color: #F3F5FC;
-    
+    height: 100vh;
+    box-sizing: border-box;
 }
 
 .header{
-    padding: 40px;
+    background-color: #d6d7da;
+    padding: 2%;
+    
 }
 
 .presentacion{
     
     height: 768px;
     display: flex;
-    padding: 80px;
-    justify-content: center;
+    align-items: center;
+    padding: 10% 15%;
+    justify-content: space-between;
+    gap: 80px;
 }
 
 .presentacion__contenido{
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -31,26 +37,18 @@ body{
 
 .presentacion__lateral{
     display: flex;
+    flex-direction: column;
     background-color: #ffff;
-    width: 400px;
-    height: 664px;
+    width: 50%;
+    height: 944px;
     border-radius: 32px;
     box-shadow: 3px 22px 50px -7px rgba(130,123,130,1);
-    flex-direction: column;
-    padding: 43px;
+    padding: 32px;
     align-content: center;
-    flex-direction: column;
     justify-content: space-around;
-    gap: 80px;
     
 }
 
-.master__lateral{
-    align-content:first center;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-around;
-}
 
 .presentacion__contenido__input{
     background-color: #F3F5FC;
@@ -58,16 +56,18 @@ body{
     font-size: 32px;
     font-family: "Inter", sans-serif;
     border-color: #F3F5FC;
-    width: 706px;
+    width: 680px;
     height: 664px;
     text-wrap: pretty;
     text-align: center;
+    resize: none;
 }
 
 .presentacion__contenido__p{
     display: flex;
     flex-direction:row;
     align-items:center;
+    gap:8px;
 }
 
 
@@ -75,48 +75,45 @@ body{
 .boton__lateral{
     
     background-color: lightblue;
-    width: 328px;
-    height: 67px;
+    width: 50%;
+    padding: 24px 0px;
     border-radius: 24px;
     border-color: #0A3871;
     color: #0A3871;
     align-items: center;
     visibility: hidden;
-
-
 }
 
 
 .master__botones__lateral{
     display: flex;
     font-family: "Inter", sans-serif;
-    font-size: 16px;
-    position: absolute;
-    align-content: center;
-    align-items: center;
-    margin-top: 159px;
+    font-size: 1rem;
+   
+
 }
 
 .master__botones{
     display: flex;
     font-family: "Inter", sans-serif;
-    font-size: 16px;
-    
+    font-size: 1rem;
+    justify-content: space-between;
+    gap: 24px;
     
 }
 
 .presentacion__botones__accion1{
     background-color: #0A3871;
-    width: 328px;
-    height: 67px;
+    width: 50%;  
+    padding: 24px 0px;
     border-radius: 24px;
     color: #F3F5FC;
 }
 
 .presentacion__botones__accion2{
     background-color: lightblue;
-    width: 328px;
-    height: 67px;
+    width: 50%;
+    padding: 24px 0px;
     border-radius: 24px;
     border-color: #0A3871;
     color: #0A3871;
@@ -150,13 +147,12 @@ body{
 }
 
 .presentacion__lateral__imagen{
-    height: 200px;
-    width: 300px;
+    width: 50%;
 }
 
 .presentacion__lateral__titulo{
     color: gray;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: "Inter", sans-serif;
     font-weight: bold;
     text-align: center;
@@ -165,7 +161,7 @@ body{
 
 .presentacion__lateral__parrafo{
     color: lightgray;
-    font-size: 16px;
+    font-size: 1rem;
     font-family: "Inter", sans-serif;
     text-align: center;
 
@@ -182,4 +178,30 @@ body{
     font-family: "Inter", sans-serif;
     font-size: 1.5rem;
     font-weight: 400;
+}
+
+
+
+
+
+@media (max-width: 1300px) {
+    
+    .header{
+        padding: 2%;
+    }
+    
+    .presentacion{
+        flex-direction: column;
+        padding: 5%;
+    }
+
+    .presentacion__contenido{
+        width: auto;
+    }
+
+    .presentacion__lateral__imagen{
+        visibility: hidden;
+    }
+
+   
 }
